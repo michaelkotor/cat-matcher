@@ -1,0 +1,74 @@
+###
+POST http://127.0.0.1:8085/v1/user/register
+Content-Type: application/json
+
+{
+  "username": "michael",
+  "password": "123"
+}
+
+###
+GET http://127.0.0.1:8085/v1/cat
+Content-Type: application/json
+
+
+###
+POST http://127.0.0.1:8085/v1/poll/start
+Content-Type: application/json
+Authorization: Basic michael 123
+
+###
+POST http://127.0.0.1:8085/v1/poll/answer
+Content-Type: application/json
+Authorization: Basic michael 123
+
+{
+  "questionId": 1,
+  "answerId": 1
+}
+
+###
+POST http://127.0.0.1:8085/v1/poll/answer
+Content-Type: application/json
+Authorization: Basic michael 123
+
+{
+  "questionId": 2,
+  "answerId": 1
+}
+
+###
+POST http://127.0.0.1:8085/v1/poll/answer
+Content-Type: application/json
+Authorization: Basic michael 123
+
+{
+  "questionId": 3,
+  "answerId": 1
+}
+
+###
+POST http://127.0.0.1:8085/v1/poll/answer
+Content-Type: application/json
+Authorization: Basic michael 123
+
+{
+  "questionId": 4,
+  "answerId": 1
+}
+
+###
+POST http://127.0.0.1:8085/v1/poll/answer
+Content-Type: application/json
+Authorization: Basic michael 123
+
+{
+  "questionId": 5,
+  "answerId": 1
+}
+
+###
+POST http://127.0.0.1:8085/v1/poll/finish
+Content-Type: application/json
+Authorization: Basic michael 123
+
